@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< Updated upstream
       <module fileurl="file://$PROJECT_DIR$/Practica_Git_Flow_A.iml" filepath="$PROJECT_DIR$/Practica_Git_Flow_A.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Practica_Git_Flow_A.iml" filepath="$PROJECT_DIR$/.idea/Practica_Git_Flow_A.iml" />
+>>>>>>> Stashed changes
     </modules>
   </component>
 </project>
