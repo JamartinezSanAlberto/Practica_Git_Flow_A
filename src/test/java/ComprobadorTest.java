@@ -5,10 +5,24 @@ import static org.junit.jupiter.api.Assertions.*;
 class ComprobadorTest {
 
     @Test
-    void getValue() {
-        Comprobador prueba = new Comprobador();
-
-        Boolean cadena = prueba.comprueba("Radio", 5);
-        assertTrue(cadena);
+    void compruebaTestTrue() {
+        Comprobador comp = new Comprobador();
+        Boolean resultado = comp.comprueba("HOLA", 4);
+        assertTrue(resultado);
     }
+    @Test
+    void  compruebaTestFalseLongitud(){
+        Comprobador comp = new Comprobador();
+        Boolean resultado = comp.comprueba("HOLA", 3);
+        assertFalse(resultado);
+    }
+    @Test
+    void compruebaTestaFalseCadena(){
+        Comprobador comp = new Comprobador();
+        Boolean resultado = comp.comprueba("HoLA", 4);
+        assertFalse(resultado);
+    }
+
+
+
 }
