@@ -1,6 +1,5 @@
 public class Comprobador {
 
-
     public boolean comprueba(String cadena,  int longitud) {
 
         if (cadena.matches("[A-Z]+") && cadena.length() == longitud) {
@@ -8,6 +7,4 @@ public class Comprobador {
         } else
         return false;
         }
-
-
 }
