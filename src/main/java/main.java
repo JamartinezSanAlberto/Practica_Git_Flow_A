@@ -6,7 +6,7 @@ public class main {
     public static void main (String[] args) {
 
         Creador creador = new Creador();
-        String palabra1 = creador.crear_clave(5);
+        String palabra = creador.crear_clave(5);
 
         System.out.println("Bienvenido al juego de adivinar la clave");
 
@@ -17,11 +17,11 @@ public class main {
         int turnos = 1;
         System.out.println("Turno: " + turnos);
         String palabra2 = sc.next();
-        long tiempo = currentTimeMillis();
+        long tiempoInicio = currentTimeMillis();
 
-        while (!palabra1.equals(palabra2)){
+        while (!palabra.equals(palabra2)){
         if (comprobador.comprueba(palabra2, 5)) {
-            String resultado = generador.generar_pista(palabra1, palabra2);
+            String resultado = generador.generar_pista(palabra, palabra2);
             System.out.println(resultado);
             turnos += 1;
             System.out.println("Vuelve a intentarlo");
@@ -31,7 +31,7 @@ public class main {
 
         }
         long tiempoFinal= currentTimeMillis();
-        long tiempoResultado= (tiempoFinal - tiempo)/1000;
+        long tiempoResultado= (tiempoFinal - tiempoInicio)/1000;
         System.out.println("Enhorabuena!!!Has acertado la palabra");
         System.out.println("Has tardado "+ tiempoResultado + "segundos");
 
@@ -40,7 +40,7 @@ public class main {
         System.out.println("Manué  - 4 turnos - 36 segundos");
         System.out.println("Alison - 5 turnos - 44 segundos");
         System.out.println("Laura  - 6 turnos - 50 segundos");
-        System.out.println("Mario  - 7 turnos - 56 segundos");
+        System.out.println("Mariano  - 7 turnos - 56 segundos");
         System.out.println("*******************************");
 
 
