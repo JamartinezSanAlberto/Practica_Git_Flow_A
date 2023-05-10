@@ -29,6 +29,17 @@ public class main {
 
         }
         System.out.println("Enhorabuena!!!Has acertado la palabra");
+
+        System.out.println(" ********   RANKING   ********");
+        System.out.println("Jezú   - 3 turnos - 27 segundos");
+        System.out.println("Manué  - 4 turnos - 36 segundos");
+        System.out.println("Alison - 5 turnos - 44 segundos");
+        System.out.println("Laura  - 6 turnos - 50 segundos");
+        System.out.println("Mario  - 7 turnos - 56 segundos");
+        System.out.println("*******************************");
+
+
+
     }
 
 
